@@ -1,0 +1,6 @@
+{
+  "name": "宠大王 Premium Pet Portal",
+  "description": "A high-end futuristic pet care ecosystem, encyclopedia, and adoption platform designed with glassmorphic elements and warm organic tones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

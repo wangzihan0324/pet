@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Custom colors matching the elegant Gold & Warm Charcoal Pet Portal theme */
+  --color-primary: #ca8a04; /* Beautiful Gold Amber */
+  --color-primary-light: #fef08a; /* Soft Warm Gold Glow */
+  --color-primary-dark: #854d0e;
+  --color-secondary: #78716c; /* Warm Stone Gray */
+  --color-surface: #fafaf9; /* Warm White */
+  --color-surface-container: #f5f5f4; /* Cozy Light Gray */
+  --color-text-charcoal: #1c1917; /* High-contrast Warm Charcoal */
+  --color-accent-mint: #60a5fa; /* Soft sky blue or secondary accent */
+  --color-success-mint: #16a34a; /* Healthy green */
+  --color-gold-glow: rgba(234, 179, 8, 0.08);
+}
+
+/* Custom Base Styles */
+body {
+  font-family: var(--font-sans);
+  background-color: #f5f4f0; /* Elegant Warm Cream Off-white base exactly like screenshot */
+  color: #1c1917;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 20px 40px rgba(124, 87, 31, 0.04);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 15px 35px rgba(249, 199, 132, 0.04);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 87, 31, 0.15);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 87, 31, 0.3);
+}
